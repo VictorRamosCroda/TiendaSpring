@@ -23,5 +23,6 @@
 	 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" 
 	 p:prefix="/WEB-INF/jsp/" p:suffix=".jsp" />
 	 
+	 <mvc:resources location="/resources/css" mapping="/resources/**"/>
 
 </beans>

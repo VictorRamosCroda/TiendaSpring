@@ -2,10 +2,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.accenture.app</groupId>
-	<artifactId>fitnessAppOrig</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>fitnessAppOrig Maven Webapp</name>
+	<name>TiendaSpring Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>
@@ -48,4 +47,5 @@
 		</plugins>
 
 	</build>
+	<artifactId>TiendaSpring</artifactId>
 </project>
