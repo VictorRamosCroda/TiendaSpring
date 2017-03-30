@@ -8,21 +8,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <spring:url value="resources/css/Stile1.css" var="mainCss"></spring:url>
 <link href="${mainCss}" rel="stylesheet">
-<title>Insert title here</title>
+<title>Login page</title>
 </head>
 <body>
 	
 	<section class="login">
-	<div class="titulo">Staff Login</div>
+	<div class="titulo">Login</div>
 	<form:form commandName="log" enctype="application/x-www-form-urlencoded">
     	<form:input path="User" type="text"  title="Username required" placeholder="Username" data-icon="U"/>
         <form:input path="Pass" type="password" title="Password required" placeholder="Password" data-icon="x"/>
         <div class="olvido">
-        	<div class="col"><a href="#" title="Ver Carásteres">Register</a></div>
+        	<div class="col"><a href="" title="Ver Carásteres">Register</a></div>
         </div>
         
         <input class="enviar" type="submit" value="Login"/> 
     </form:form>
 	</section>
+	<h5 style="text-align:center; font-size: x-large; color: white; ">${Mensaje}</h5>
 </body>
 </html>

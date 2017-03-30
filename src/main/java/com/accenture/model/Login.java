@@ -2,8 +2,9 @@ package com.accenture.model;
 
 public class Login {
 	
-	private String User;
-	private String Pass;
+	private String message="Usuario o password incorrecto";
+	private String User="";
+	private String Pass="";
 	
 	public String getUser() {
 		return User;
@@ -17,5 +18,14 @@ public class Login {
 	public void setPass(String pass) {
 		Pass = pass;
 	}
+	public String getMessage() {
+		return message;
+	}
+	
+	public void setMessage(String message) {
+		 this.message=message;
+	}
 
+
+	
 }
