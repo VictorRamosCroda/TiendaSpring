@@ -144,4 +144,24 @@ blockquote:before, blockquote:after, q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+    
+}
+
+img {
+	width: 350px;
+	height: 250px;
+	border-radius: 15px;
+}
+
+.tdmia{
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+td{
+	text-align: center;
+	color: #e2dfd7;
+	font-size: large;
 }

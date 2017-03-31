@@ -3,8 +3,9 @@ package com.accenture.model;
 public class Vehiculo {
 	String Nombre="";
 	String Marca="";
-	String Precio="";
-	String Categoria="";
+	double Precio;
+	int Cantidad;
+	
 	
 	public String getNombre() {
 		return Nombre;
@@ -18,17 +19,17 @@ public class Vehiculo {
 	public void setMarca(String marca) {
 		Marca = marca;
 	}
-	public String getPrecio() {
+	public double getPrecio() {
 		return Precio;
 	}
-	public void setPrecio(String precio) {
+	public void setPrecio(double precio) {
 		Precio = precio;
 	}
-	public String getCategoria() {
-		return Categoria;
+	public int getCantidad() {
+		return Cantidad;
 	}
-	public void setCategoria(String categoria) {
-		Categoria = categoria;
+	public void setCategoria(int cantidad) {
+		Cantidad = cantidad;
 	}
 	
 }
