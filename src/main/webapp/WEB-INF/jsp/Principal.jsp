@@ -14,6 +14,7 @@
 	
 	<section class="login">
 	<div class="titulo">Login</div>
+	<center>
 	<form:form commandName="log" enctype="application/x-www-form-urlencoded">
     	<form:input path="User" type="text"  title="Username required" placeholder="Username" data-icon="U"/>
         <form:input path="Pass" type="password" title="Password required" placeholder="Password" data-icon="x"/>
@@ -23,7 +24,8 @@
         
         <input class="enviar" type="submit" value="Login"/> 
     </form:form>
+    </center>
 	</section>
-	<h5 style="text-align:center; font-size: x-large; color: white; ">${Mensaje}</h5>
+	<h5 style="text-align:center; font-size: x-large; color: black; ">${Mensaje}</h5>
 </body>
 </html>
