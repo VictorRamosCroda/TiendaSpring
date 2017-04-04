@@ -21,36 +21,42 @@ public class TiendaController {
 	List<Vehiculo> lista= new ArrayList<>();
 	
 	@RequestMapping(value="/Tienda")
-	public String goTienda(@ModelAttribute ("vehicule") Vehiculo vehicule,@SessionAttribute ("ban") String ban){
-		System.out.println(vehicule.getMarca());
-		System.out.println(vehicule.getNombre());
-		System.out.println(vehicule.getPrecio());
-		
+	public String goTienda(@ModelAttribute ("vehicule") Vehiculo vehicule,@SessionAttribute ("ban") String ban, 
+			@ModelAttribute ("send") Vehiculo send){
+		String v=send.getValue();
+		System.out.println(v.trim());
+		if(v.trim().equals("Go to")){
+			send.setValue("");
+			return "redirect:Carrito.html";
+		}
+		else{
 		if(Boolean.parseBoolean(ban)==true){
 			lista.add(vehicule);
-			imprimir();
 		return "Tienda";}
 		else{
 			return "redirect:Login.html";
-		}
+		}}
+		
+			
+		
 	}
 	
-	public void imprimir(){
+	public String imprimir(){
+		String Cadena="";
+		double Sumar=0;
 		Iterator<Vehiculo> it= lista.iterator();
-		System.out.println("--------------------");
 		while(it.hasNext()){
 			Vehiculo v=it.next();
-			System.out.println(v.getMarca());
-			System.out.println(v.getPrecio());
-			System.out.println(v.getNombre());
+			Cadena +="Marca: "+v.getMarca()+"\n";
+			Cadena +="Modelo: "+v.getNombre()+" \n";
+			Cadena +="Precio: "+v.getPrecio()+"\n"; 
+			Sumar+=Double.parseDouble(v.getPrecio());
 		}
-		System.out.println("--------------------");
-
+		Cadena+="Pago Final: "+Sumar;
+		return Cadena;
 	}
 
-	
-	
-	
+		
 	
 	
 

@@ -32,9 +32,22 @@
 <spring:url value="resources/images/Porsche-CarreraGT.jpg" var="CarreraGT"></spring:url>
 
 <title>Cars Store</title>
+<script language="JavaScript"> 
+function pregunta(){ 
+    if (confirm('¿Desea agregar al carrito?')){ 
+       document.tuformulario.submit() 
+    } 
+} 
+</script>
 </head>
 <body>
+<center>
 
+<form:form commandName="send" class="tdmia" style="background-color:#60605d; border:0px;" >
+<form:input path="Value" class="in" value="Go to" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
+<input class="enviar" type="submit" value="Cart"  />
+</form:form>
+</center>
 <article style="margin-top: 50px; margin-bottom: 50px; " >
 	<center>
 	<table style="background-color:#60605d ; border-radius: 15px;">
@@ -42,7 +55,7 @@
 			<td class="tdmia">
 			<form:form commandName="vehicule">
 			
-				<img alt="Citroen GTconcept" src="${Chiron}" ><br/>
+				<img alt="Bugatti Chrion" src="${Chiron}" ><br/>
 			
 				Marca: <form:input path="Marca" class="in" value="BUGATTI" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
@@ -51,14 +64,14 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="3,800,500.00" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" onclick="pregunta()"/>
 			
 			</form:form>
 			</td>
 			<td class="tdmia">
 			<form:form commandName="vehicule">
 			
-				<img alt="Citroen GTconcept" src="${Veyron}" ><br/>
+				<img alt="Bugatti Veyron" src="${Veyron}" ><br/>
 			
 				Marca: <form:input path="Marca" class="in" value="BUGATTI" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
@@ -67,14 +80,14 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="7,345,000.00" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>
 			<td class="tdmia">
 			<form:form commandName="vehicule">
 			
-				<img alt="Citroen GTconcept" src="${Camaro}" ><br/>
+				<img alt="Chevrolet Camaro" src="${Camaro}" ><br/>
 			
 				Marca: <form:input path="Marca" class="in" value="CHEVROLET" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
@@ -83,7 +96,7 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="865,000.00" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>
@@ -93,7 +106,7 @@
 			<td class="tdmia">
 			<form:form commandName="vehicule">
 			
-				<img alt="Citroen GTconcept" src="${Corvette}" ><br/>
+				<img alt="Chevrolet Corvette" src="${Corvette}" ><br/>
 			
 				Marca: <form:input path="Marca" class="in" value="CHEVROLET" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
@@ -102,7 +115,7 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="3,560,000.00" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>
@@ -118,7 +131,7 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="5,550,000.00" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>
@@ -134,7 +147,7 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="6,000,000.00" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>
@@ -144,7 +157,7 @@
 			<td class="tdmia">
 			<form:form commandName="vehicule">
 			
-				<img alt="Citroen GTconcept" src="${Delorean}" ><br/>
+				<img alt="Dmc Delorean" src="${Delorean}" ><br/>
 			
 				Marca: <form:input path="Marca" class="in" value="DMC" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
@@ -153,14 +166,14 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="4,700,000.00" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>
 			<td class="tdmia">
 			<form:form commandName="vehicule">
 			
-				<img alt="Citroen GTconcept" src="${Bogota}" ><br/>
+				<img alt="Ferrari Bogota" src="${Bogota}" ><br/>
 			
 				Marca: <form:input path="Marca" class="in" value="FERRARI" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
@@ -169,14 +182,14 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="5,230,000.00" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>
 			<td class="tdmia">
 			<form:form commandName="vehicule">
 			
-				<img alt="Citroen GTconcept" src="${F80}" ><br/>
+				<img alt="Ferrari F80" src="${F80}" ><br/>
 			
 				Marca: <form:input path="Marca" class="in" value="FERRARI" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
@@ -185,7 +198,7 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="6,435,700.000" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>
@@ -194,7 +207,7 @@
 				<td class="tdmia">
 			<form:form commandName="vehicule">
 			
-				<img alt="Citroen GTconcept" src="${GT}" ><br/>
+				<img alt="Ford GT" src="${GT}" ><br/>
 			
 				Marca: <form:input path="Marca" class="in" value="FORD" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
@@ -203,7 +216,7 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="6,900,350.00" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>
@@ -219,14 +232,14 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="2,100,00.00" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>
 			<td class="tdmia">
 			<form:form commandName="vehicule">
 			
-				<img alt="Ford Aventador" src="${Aventador}" ><br/>
+				<img alt="Lamborghini Aventador" src="${Aventador}" ><br/>
 			
 				Marca: <form:input path="Marca" class="in" value="LAMBORGHINI" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
@@ -235,7 +248,7 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="6,800,900.00" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>
@@ -245,7 +258,7 @@
 			<td class="tdmia">
 			<form:form commandName="vehicule">
 			
-				<img alt="Citroen GTconcept" src="${Gallardo}" ><br/>
+				<img alt="Lamborghini Gallardo" src="${Gallardo}" ><br/>
 			
 				Marca: <form:input path="Marca" class="in" value="LAMBORGHINI" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
@@ -254,14 +267,14 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="3,459,000.00" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>
 			<td class="tdmia">
 			<form:form commandName="vehicule">
 			
-				<img alt="Citroen GTconcept" src="${Murcielago}" ><br/>
+				<img alt="Lamborghini Murcielago" src="${Murcielago}" ><br/>
 			
 				Marca: <form:input path="Marca" class="in" value="LAMBORGHINI" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
@@ -270,14 +283,14 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="4,650,000.00" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>
 			<td class="tdmia">
 			<form:form commandName="vehicule">
 			
-				<img alt="Citroen GTconcept" src="${Elise}" ><br/>
+				<img alt="Lotus Elise" src="${Elise}" ><br/>
 			
 				Marca: <form:input path="Marca" class="in" value="LOTUS" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
@@ -286,7 +299,7 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="2,900,340.00" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>
@@ -295,7 +308,7 @@
 			<td class="tdmia">
 			<form:form commandName="vehicule">
 			
-				<img alt="Citroen GTconcept" src="${Alferi}" ><br/>
+				<img alt="Maserati Alferi" src="${Alferi}" ><br/>
 			
 				Marca: <form:input path="Marca" class="in" value="MASERATI" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
@@ -304,14 +317,14 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="4,200,700.90" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>
 			<td class="tdmia">
 			<form:form commandName="vehicule">
 			
-				<img alt="Citroen GTconcept" src="${MXT}" ><br/>
+				<img alt="Mastretta MXT" src="${MXT}" ><br/>
 			
 				Marca: <form:input path="Marca" class="in" value="MASTRETTA" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
@@ -320,14 +333,14 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="4,734,900.00" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>
 			<td class="tdmia">
 			<form:form commandName="vehicule">
 			
-				<img alt="Citroen GTconcept" src="${p208}" ><br/>
+				<img alt="Peugeot 208" src="${p208}" ><br/>
 			
 				Marca: <form:input path="Marca" class="in" value="PEUGEOT" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
@@ -336,7 +349,7 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="890,000.00" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>
@@ -354,14 +367,14 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="4,390,000.00" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>
 			<td class="tdmia">
 			<form:form commandName="vehicule">
 			
-				<img alt="Citroen GTconcept" src="${p911}" ><br/>
+				<img alt="Porsche Carrera 911" src="${p911}" ><br/>
 			
 				Marca: <form:input path="Marca" class="in" value="PORSCHE" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
@@ -370,23 +383,23 @@
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="3,460,500.00" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>
 			<td class="tdmia">
 			<form:form commandName="vehicule">
 			
-				<img alt="Citroen GTconcept" src="${CarreraGT}" ><br/>
+				<img alt="Porsche Carrera GT" src="${CarreraGT}" ><br/>
 			
 				Marca: <form:input path="Marca" class="in" value="PORSCHE" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
 			
-				Modelo: <form:input path="Nombre" class="in" value="CarreraGT" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
+				Modelo: <form:input path="Nombre" class="in" value="Carrera GT" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
 				Precio: $ <form:input path="Precio" class="in" value="9,000,000.00" contenteditable="false" readonly="true" style="background-color:#60605d; border:0px;"/>
 				<br/>
-				<input class="enviar" type="submit" value="Comprar" />
+				<input class="enviar" type="submit" value="add cart" />
 			
 			</form:form>
 			</td>

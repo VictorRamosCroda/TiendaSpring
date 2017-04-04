@@ -4,9 +4,15 @@ public class Vehiculo {
 	String Nombre="";
 	String Marca="";
 	String Precio="";
+	String Value="";
 	
 	
-	
+	public String getValue() {
+		return Value;
+	}
+	public void setValue(String Value) {
+		this.Value = Value;
+	}
 	public String getNombre() {
 		return Nombre;
 	}
